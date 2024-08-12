@@ -444,22 +444,22 @@ a {
   transition: 0.2s ease all;
 }
 .modal__social-link:nth-child(1) {
-  background: url("../src/img/modal-whatsapp.png");
+  background: url("/OXU/src/img/modal-whatsapp.png");
 }
 .modal__social-link:nth-child(2) {
-  background: url("../src/img/modal-tg.png");
+  background: url("/OXU/src/img/modal-tg.png");
 }
 .modal__social-link:nth-child(3) {
-  background: url("../src/img/modal-vk.png");
+  background: url("/OXU/src/img/modal-vk.png");
 }
 .modal__social-link:hover:nth-child(1) {
-  background: url("../src/img/modal-whatsapp.png");
+  background: url("/OXU/src/img/modal-whatsapp.png");
 }
 .modal__social-link:hover:nth-child(2) {
-  background: url("../src/img/modal-tg-blue.png");
+  background: url("/OXU/src/img/modal-tg-blue.png");
 }
 .modal__social-link:hover:nth-child(3) {
-  background: url("../src/img/modal-vk.png");
+  background: url("/OXU/src/img/modal-vk.png");
 }
 .modal__social-ico {
   background: #000;
@@ -653,6 +653,11 @@ a {
   max-width: 340px;
   text-align: center;
   z-index: 0;
+}
+@media (max-width: 800px) {
+  .chat__main-hint {
+    display: none;
+  }
 }
 .chat__main-btns {
   position: relative;

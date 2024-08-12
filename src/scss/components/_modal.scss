@@ -141,25 +141,25 @@
         @for $i from 1 to 4 {
             &-link:nth-child(#{$i}) {
                 @if $i == 1 {
-                    background: url('../src/img/modal-whatsapp.png');
+                    background: url('/OXU/src/img/modal-whatsapp.png');
                 } @else if $i == 2 {
-                    background: url('../src/img/modal-tg.png');
+                    background: url('/OXU/src/img/modal-tg.png');
                 }
                 @else if $i == 3 {
-                    background: url('../src/img/modal-vk.png');
+                    background: url('/OXU/src/img/modal-vk.png');
                 }
             }
         }
 
         &-link:hover {
             &:nth-child(1) {
-                background: url('../src/img/modal-whatsapp.png');
+                background: url('/OXU/src/img/modal-whatsapp.png');
             }
             &:nth-child(2) {
-                background: url('../src/img/modal-tg-blue.png');
+                background: url('/OXU/src/img/modal-tg-blue.png');
             }
             &:nth-child(3) {
-                background: url('../src/img/modal-vk.png');
+                background: url('/OXU/src/img/modal-vk.png');
             }
         }
         
