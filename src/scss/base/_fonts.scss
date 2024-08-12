@@ -4,7 +4,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: url('/src/fonts/raleway-v34-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../src/fonts/raleway-v34-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
   /* raleway-600 - cyrillic_latin */
   @font-face {
@@ -12,26 +12,26 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    src: url('/src/fonts/raleway-v34-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../src/fonts/raleway-v34-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
     font-display: swap;
     font-family: 'SF PRO';
     font-weight: normal;
     font-weight: 600;
-    src: url("/src/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
+    src: url("../src/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
 }
 @font-face {
     font-display: swap;
     font-family: 'SF PRO';
     font-weight: normal;
     font-weight: 500;
-    src: url("/src/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+    src: url("../src/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
 }
 @font-face {
     font-display: swap;
     font-family: 'SF PRO';
     font-weight: normal;
     font-weight: 400;
-    src: url("/src/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+    src: url("../src/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
 }
