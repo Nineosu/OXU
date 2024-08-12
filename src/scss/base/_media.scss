@@ -92,8 +92,11 @@
 
     .chat__container {
         padding-top: 0;
-        height: 100vh;
+        height: 70vh;
         // max-height: 360px;
+    }
+    .chat__main {
+        padding: 8px;
     }
     .chat {
         border-radius: 16px;
