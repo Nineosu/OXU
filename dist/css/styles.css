@@ -1253,4 +1253,13 @@ a {
   .modal__content {
     width: 90%;
   }
+  .materials__item-title,
+  .materials__item--wide .materials__item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .materials__item-text {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }/*# sourceMappingURL=styles.css.map */
