@@ -1,0 +1,43 @@
+.projects-page {
+    .section__header {
+        margin-top: 15px;
+    }
+
+    .projects__items {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 40px;
+
+        @media (max-width: 800px) {
+            margin-top: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 15px;
+            row-gap: 25px;
+        }
+    }
+
+    .projects__item {
+        max-width: 180px;
+        
+        img {
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &--wide {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            max-width: unset;
+
+            &-title {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}

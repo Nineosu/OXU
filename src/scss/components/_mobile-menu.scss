@@ -1,0 +1,35 @@
+.mobile-menu {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    
+    border-bottom: 1px solid #FFFFFF1A; 
+    display: none;
+
+    &__btn {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #EBEBF599;
+        position: relative;
+    }
+
+    &__btn.active {
+        color: #007AFF;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #007AFF;
+            border-radius: 3px 3px 0 0;
+        }
+    }
+}

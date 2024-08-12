@@ -1,0 +1,35 @@
+.filters {
+    margin-top: 20px;
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__btn {
+        padding: 6px 16px;
+        border-radius: 80px;
+        border: 1px solid #FFFFFF99;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #EBEBF599;   
+
+        cursor: pointer;
+        transition: .2s ease all;
+
+        &:hover {
+            background: #224eed67;
+            color: #ffffffba;   
+            transition: .2s ease all;
+        }
+
+        &--picked {
+            background: #224EED;
+            border-color: transparent;
+            color: #FFFFFF;
+        }
+    }
+}

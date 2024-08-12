@@ -1,0 +1,184 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: #00000099;
+    display: none;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #151617;
+        border: 1px solid #30333b;
+        border-radius: 12px;
+        padding: 36px 24px 24px 24px;
+        overflow-x: hidden;
+
+        max-width: 480px;
+        width: 100%;
+
+        & > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10%;    
+            width: 120%;
+            height: 100%;
+            box-shadow: inset (0px -100px 70px 5px rgba(34, 78, 237, .2));
+        }
+    }
+
+    &-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        transition: .2s ease all;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 2.5px;
+            background-color: #a1a2a2;
+            transform-origin: center;
+            border-radius: 30px;
+        }
+
+        &:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #fff;
+        max-width: 350px;
+    }
+
+    &__form {
+        margin-top: 25px;
+
+        &-input {
+            display: flex;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #FFFFFF99;
+            width: 100%;
+            margin-top: 15px;
+            
+            font-size: 16px;
+            line-height: 19px;
+            color: #fff;
+
+            &::placeholder {
+                color: #FFFFFF66;
+            }
+
+            &:last-child {
+                margin-top: 0;
+            }
+        }
+
+        &-btn {
+            margin-top: 40px;
+            background: #224EED;
+        }
+    }
+
+    &__social {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF66;
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        &-link {
+            width: 56px;
+            height: 56px;
+            transition: .2s ease all;
+        }
+
+        @for $i from 1 to 4 {
+            &-link:nth-child(#{$i}) {
+                @if $i == 1 {
+                    background: url('/src/img/modal-whatsapp.png');
+                } @else if $i == 2 {
+                    background: url('/src/img/modal-tg.png');
+                }
+                @else if $i == 3 {
+                    background: url('/src/img/modal-vk.png');
+                }
+            }
+        }
+
+        &-link:hover {
+            &:nth-child(1) {
+                background: url('/src/img/modal-whatsapp.png');
+            }
+            &:nth-child(2) {
+                background: url('/src/img/modal-tg-blue.png');
+            }
+            &:nth-child(3) {
+                background: url('/src/img/modal-vk.png');
+            }
+        }
+        
+        &-ico {
+            background: #000;
+        }
+    }
+}
+
+.modal.modal-show {
+    display: block;
+}
+
+.mobile-modal-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    display: none;
+    z-index: 10;
+}

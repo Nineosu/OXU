@@ -1,0 +1,66 @@
+body {
+    background: #151617;
+    font-family: 'SF PRO';
+    overflow-y: hidden;
+}
+
+.page {
+    position: relative;
+    padding-right: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    min-width: 450px;
+}
+
+.page::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+  
+.page::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #FFFFFF33;
+}
+  
+.page::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.wrapper {
+    position: relative;
+    padding: 0 20px;
+    // display: flex;
+    // gap: 10px;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 530px);
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(255, 255, 255, .4);
+}
+
+.dataPage {
+    display: none;
+}
+
+.section-hide {
+    display: none;
+}
+.page-show {
+    display: block !important;
+}
+
+a {
+    transition: .2s ease all;
+}

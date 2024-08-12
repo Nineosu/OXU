@@ -1,0 +1,17 @@
+.blue-btn {
+    width: 100%;
+    padding: 16px;
+    background: conic-gradient(from -33.25deg at 50% 50%, #224EED 0deg, #325EFF 360deg);
+    border-radius: 35px;
+    
+    font-family: 'SF PRO';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    transition: .2s ease all;
+
+    &:hover {
+        opacity: .7;
+    }
+}
