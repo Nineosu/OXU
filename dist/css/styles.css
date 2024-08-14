@@ -489,6 +489,12 @@ a {
   z-index: 10;
   background: rgba(21, 22, 23, 0.8980392157);
 }
+.header__logo {
+  max-width: 42px;
+}
+.header__logo-img {
+  width: 100%;
+}
 .header__tel-link {
   font-size: 24px;
   line-height: 28px;
@@ -853,7 +859,7 @@ a {
 }
 .projects__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
