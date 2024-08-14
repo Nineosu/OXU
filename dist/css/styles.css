@@ -859,7 +859,7 @@ a {
 }
 .projects__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -868,7 +868,6 @@ a {
           justify-content: center;
   gap: 15px;
   margin-top: 40px;
-  overflow-x: auto;
 }
 .projects__item {
   display: -webkit-box;
@@ -886,6 +885,9 @@ a {
           justify-content: center;
   gap: 15px;
   max-width: 125px;
+}
+.projects__item.hidden {
+  display: none;
 }
 .projects__item-title {
   font-size: 10px;

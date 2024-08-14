@@ -123,4 +123,55 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // projects items
+    if (document.querySelector('.preview__projects')) {
+        const container = document.querySelector('.preview__projects');
+        const items = container.querySelectorAll('.projects__item:not(.projects__item--wide)');
+        const linkItem = container.querySelector('.projects__item--wide');
+
+        const containerWidth = container.clientWidth - 100;
+        const itemWidth = items[0].clientWidth;
+        const wideItemWidth = linkItem.clientWidth;
+
+        const availableWidth = containerWidth - wideItemWidth;
+        let totalWidth = 0;
+        let maxItems = 0;
+
+        if (window.innerWidth >= 1300) {
+            items.forEach((item) => {
+                if (totalWidth + itemWidth <= availableWidth) {
+                    totalWidth += itemWidth;
+                    if (maxItems == 7) {
+                        maxItems = 7;
+                    } else {
+                        maxItems++;
+                    }
+                }
+            });
+
+            items.forEach((item, index) => {
+                if (index < maxItems) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            linkItem.classList.remove('hidden');
+
+        } else {
+            maxItems = 4;
+
+            items.forEach((item, index) => {
+                if (index < maxItems) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            linkItem.classList.remove('hidden');
+        }
+    }
 });
